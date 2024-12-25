@@ -6,16 +6,16 @@
 
     <nav>
         <ul>
-            <a href="">
+            <a href="index.php">
                 <li>Главная</li>
             </a>
-            <a href="">
+            <a href="tickets.php">
                 <li>Поиск рейсов</li>
             </a>
-            <a href="">
+            <a href="about.php">
                 <li>О компании</li>
             </a>
-            <a href="">
+            <a href="contact.php">
                 <li>Контакты</li>
             </a>
             <li>Язык
@@ -25,10 +25,12 @@
                 </ul>
             </li>
         </ul>
-        <div class="personal">
-            <img src="" alt="">
-            <a href=""><h2>User</h2></a>
-        </div>
+        <a href="account.php">
+            <div class="personal">
+                <img src="" alt="">
+                <h2>User</h2>
+            </div>
+        </a>
     </nav>
 </header>
 
@@ -36,23 +38,22 @@
     *{
         font-family: Arial, Helvetica, sans-serif;
     }
-    body{
-        width: 100%;
-        overflow-x: hidden;
-    }
 
     header{
-        width: 100%;
+        width: 90%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        border-bottom: 1px solid #c1c1c1;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 5%;
     }
 
     .logo{
         height: 80px;
         width: 80px;
-        background-color: grey;
+        background-color: #fff;
     }
 
     nav{
@@ -92,16 +93,16 @@
 
     nav>ul>li:hover>ul>li{
         padding: 5px;
-        border: 2px solid grey;
+        border: 2px solid #ddd;
         margin: 0;
         cursor: pointer;
+        background-color: white;
     }
-
 
     nav a{
         margin: 10px;
         text-decoration: none;
-        color: black;
+        color: #fff;
     }
 
     .personal{
@@ -114,7 +115,8 @@
         height: 50px;
         width: 50px;
         border-radius: 50%;
-        background-color: grey;
+        background-color: #fff;
+        margin-right: 10px;
     }
 
     .personal h2{
