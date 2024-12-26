@@ -19,7 +19,18 @@
         <input type="date" id="search-date" name="search-date">
     </section>
 
-    sect.race>.raceAll>.raceContainer>h1{Откуда : Куда}+p{Дата вылета: }+p{Дата прибытия}
+    <section class="race">
+        <div class="raceAll">
+            <div class="raceContainer">
+                <h1>Откуда : Куда</h1>
+                <div class="date">
+                    <p>Дата вылета: </p>
+                    <p>Дата прибытия: </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
     <!-- Секция акций -->
     <section class="deals-section">
