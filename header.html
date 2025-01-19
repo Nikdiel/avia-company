@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avia company</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="css/tickets.css">
+</head>
+<body>
+
 <header>
     <div class="logo">
         <img src="img/logo.jpg" alt="">
@@ -9,12 +20,12 @@
             <a href="index.php">
                 <li>Главная</li>
             </a>
-            <a href="tickets.php">
+            <a href="search.php">
                 <li>Поиск рейсов</li>
             </a>
-            <a href="about.php">
+            <!-- <a href="about.php">
                 <li>О компании</li>
-            </a>
+            </a> -->
             <a href="contact.php">
                 <li>Контакты</li>
             </a>
@@ -26,17 +37,18 @@
             </li>
         </ul>
         <a href="account.php">
-            <div class="personal">
-                <img src="img/user.png" alt="">
-                <h2>User</h2>
-            </div>
+                <p>Личный кабинет</p>
         </a>
     </nav>
 </header>
 
 <style>
-    *{
+    *:not(li){
         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html{
+        background-color: #252540;
     }
 
     header{
@@ -45,7 +57,7 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #c1c1c1;
-        background-color: #333;
+        background-color: #252540;
         color: #fff;
         padding: 10px 5%;
     }
@@ -75,6 +87,7 @@
         justify-content: space-around;
         align-items: center;
         list-style: none;   
+        margin: 0;
     }
 
     nav>ul>li>ul{
@@ -82,38 +95,62 @@
     }
 
     nav>ul>li{
+        font-family: Arial Black;
         position: relative;
-        margin: 0 15px;
-        height: 30px;
+        padding: 10px;
         display: flex;
         align-items: center;
         cursor: pointer;
+        border-radius: 5px;
+        transition: 1s;
     }
 
     nav>ul>li:hover>ul{
         display: initial;
         position: absolute;
         list-style: none;
-        top: 30px;
+        top: 42px;
         left: 0;
         padding: 0;
     }
 
+    nav>ul>li:hover{
+        background-color: #35355e;
+    }
+
+    nav>ul>li:hover>ul>li:hover{
+        background-color: #35355e;
+    }
+
+    nav>ul>li>ul{
+        border-radius: 0 5px 5px 5px;
+        overflow: hidden;
+    }
+
     nav>ul>li:hover>ul>li{
-        padding: 5px;
-        border: 2px solid #ddd;
+        padding: 10px;
+        margin: 0 5px;
         margin: 0;
         cursor: pointer;
-        background-color: white;
+        font-family: Arial Black;
+        background-color: #252540;
+        transition: 1s;
     }
 
     nav a{
-        margin: 10px;
+        padding: 10px;
+        margin: 0 5px;
         text-decoration: none;
         color: #fff;
+        border-radius: 5px;
+        font-family: Arial Black;
+        transition: 1s;
+    }
+    nav>ul>a:hover{
+        background-color: #35355e;
     }
 
-    .personal{
+    /* .personal{
         margin-left: 50px;
         display: flex;
         align-items: center;
@@ -125,11 +162,17 @@
         border-radius: 50%;
         background-color: #fff;
         margin-right: 10px;
-    }
+    } */
 
-    .personal h2{
-        margin: 0;
-        padding-top: 10px;
+    nav p{
+        padding: 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: 1s;
+        font-family: Arial Black;
+    }
+    nav p:hover{
+        background-color: #35355e;
     }
 
     
